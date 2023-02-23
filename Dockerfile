@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.2-fpm
 
 # Installation des librairies pour les extensions PHP
 RUN sed -i 's/deb\.debian\.org/ftp\.fr\.debian\.org/g' /etc/apt/sources.list
