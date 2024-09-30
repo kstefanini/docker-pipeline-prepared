@@ -4,7 +4,7 @@
 
 ```
 vim Dockerfile
-docker build - < Dockerfile
+docker build -t <myuser>/<myimage> -f Dockerfile .
 // takes long time, like looooong time, network seems really slower than host
 ```
 
@@ -13,7 +13,7 @@ docker build - < Dockerfile
 ```
 docker images
 // <none>        <none>    e9cbxxxxxxxx   x minutes ago   xxxMB
-docker tag e9cbxxxxxxxx <youruser>/php-pipeline-prepared:<newtag>
-docker push <youruser>/php-pipeline-prepared:<newtag>
+docker tag e9cbxxxxxxxx <myuser>/<myimage>:<newtag>
+docker push <myuser>/<myimage>:<newtag>
 ```
 
