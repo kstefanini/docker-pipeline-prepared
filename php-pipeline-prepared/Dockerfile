@@ -12,7 +12,8 @@ RUN apt-get install -y --no-install-recommends \
 	libxml2-dev \
 	wkhtmltopdf \
 	libwebp-dev \
-	unzip
+	unzip \
+	git
 
 # Installation des extensions PHP
 RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp
