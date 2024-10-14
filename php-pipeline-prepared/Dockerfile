@@ -13,6 +13,8 @@ RUN apt-get install -y --no-install-recommends \
 	wkhtmltopdf \
 	libwebp-dev \
 	unzip \
+	ssh \
+	ssh-askpass \
 	git
 
 # Installation des extensions PHP
